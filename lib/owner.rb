@@ -16,10 +16,10 @@ class Owner
       @@all << self
 
     end
-    #
-    # def buy_cat(name)
-    #   new_pet = Cat.new(name)
-    # end
+    
+    def buy_fish(name)
+      new_pet = Fish.new(name)
+    end
 
   def say_species
     return "I am a #{@species}."
