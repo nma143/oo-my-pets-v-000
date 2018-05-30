@@ -59,7 +59,7 @@ class Owner
         end
 
       end
-      
+
       @pets =
       {
         fishes: [],
