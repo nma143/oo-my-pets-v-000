@@ -1,6 +1,6 @@
 class Owner
   # code goes here
-  @all = []
+  @@all = []
 
     # attr_accessor :pets
     #
@@ -16,5 +16,8 @@ class Owner
     # def buy_cat(name)
     #   new_pet = Cat.new(name)
     # end
+  def self.all
+    @@all
+  end
 
 end
