@@ -32,10 +32,23 @@ class Owner
       @pets[:dogs] << new_pet
     end
 
+    def walk_dogs
+
+      @pets[:dogs].value.each do |dog|
+        dog.mood = "happy"
+
+      end
+
+
+    end
+
 
     def say_species
       return "I am a #{@species}."
     end
+
+
+
 
     def self.all
       @@all
