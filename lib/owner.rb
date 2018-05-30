@@ -9,7 +9,7 @@ class Owner
       @pets = {
         fishes: [],
         cats: [],
-        dogs: []}
+        dogs: []
       }
     end
     #
