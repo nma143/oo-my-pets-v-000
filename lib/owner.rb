@@ -50,12 +50,21 @@ class Owner
       end
     end
 
-    def say_species
-      return "I am a #{@species}."
+    def sell_pets
+
+      @pets.each do |species, pets|
+        pets.each do |pet|
+          pet.mood = "nervous"
+        end
+        
+      end
+
     end
 
 
-
+    def say_species
+      return "I am a #{@species}."
+    end
 
     def self.all
       @@all
