@@ -2,15 +2,18 @@ class Owner
   # code goes here
   @@all = []
 
-    attr_accessor :nam, :pets
+    attr_accessor :name, :pets
 
     def initialize(name)
       @name = name
-      @pets = {
+      @pets = 
+      {
         fishes: [],
         cats: [],
         dogs: []
       }
+      @@all << self
+      
     end
     #
     # def buy_cat(name)
