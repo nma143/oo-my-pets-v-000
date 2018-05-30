@@ -20,12 +20,19 @@ class Owner
     # def buy_cat(name)
     #   new_pet = Cat.new(name)
     # end
+
+  def say_species
+    puts "I am a #{self.species}."
+  end
+
   def self.all
     @@all
   end
+
   def self.count
     @@all.length
   end
+
   def self.reset_all
     @@all = []
   end
