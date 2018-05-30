@@ -22,21 +22,28 @@ class Owner
       @pets[:fishes] << new_pet
     end
 
-  def say_species
-    return "I am a #{@species}."
-  end
+    def buy_cat(name)
+      new_pet = Cat.new(name)
+      @pets[:cats] << new_pet
+    end
 
-  def self.all
-    @@all
-  end
+    
 
-  def self.count
-    @@all.length
-  end
+    def say_species
+      return "I am a #{@species}."
+    end
 
-  def self.reset_all
-    @@all = []
-  end
+    def self.all
+      @@all
+    end
+
+    def self.count
+      @@all.length
+    end
+
+    def self.reset_all
+      @@all = []
+    end
 
 
 end
