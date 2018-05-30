@@ -3,7 +3,7 @@ class Owner
   @@all = []
 
     attr_accessor :pets, :name
-    attr_reader :species 
+    attr_reader :species
 
     def initialize(species)
       @species = species
@@ -16,9 +16,10 @@ class Owner
       @@all << self
 
     end
-    
+
     def buy_fish(name)
       new_pet = Fish.new(name)
+      @pets[fishes]<<new_pet
     end
 
   def say_species
