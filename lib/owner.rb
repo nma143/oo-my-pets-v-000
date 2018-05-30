@@ -6,14 +6,14 @@ class Owner
 
     def initialize(name)
       @name = name
-      @pets = 
+      @pets =
       {
         fishes: [],
         cats: [],
         dogs: []
       }
       @@all << self
-      
+
     end
     #
     # def buy_cat(name)
